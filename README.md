@@ -8,8 +8,6 @@ Este projeto é uma **API RESTful** desenvolvida com **ASP.NET Core 8.0**, que s
 - [.NET 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - [ASP.NET Core Web API](https://learn.microsoft.com/en-us/aspnet/core/web-api/)
 - [Entity Framework Core (InMemory)](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/)
-- Programação Orientada a Objetos (POO)
-- Visual Studio Code
 
 
 ## 🧪 Funcionalidades

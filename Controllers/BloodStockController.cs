@@ -1,10 +1,9 @@
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBank.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/bloodstock")]
     public class BloodStockController : ControllerBase
     {
         [HttpGet]

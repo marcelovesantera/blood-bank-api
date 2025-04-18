@@ -1,10 +1,10 @@
-using Microsoft.AspNetCore.Http;
+using BloodBank.API.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBank.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/donations")]
     public class DonationController : ControllerBase
     {
         [HttpGet]
@@ -20,13 +20,13 @@ namespace BloodBank.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateDonation()
+        public IActionResult CreateDonation(CreateDonationInputModel model)
         {
-            return Created();
+            return CreatedAtAction(nameof(GetDonationById), new { id = 1 }, model);
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateDonation(int id)
+        public IActionResult UpdateDonation(int id, UpdateDonationInputModel model)
         {
             return NoContent();
         }

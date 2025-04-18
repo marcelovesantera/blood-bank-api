@@ -8,7 +8,7 @@ namespace BloodBank.API.Controllers
     public class DonationController : ControllerBase
     {
         [HttpGet]
-        public IActionResult GetAllDonations()
+        public IActionResult GetAllDonations(string search)
         {
             return Ok();
         }

@@ -1,6 +1,9 @@
+using BloodBank.API.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.Configure<BloodDonationQuantityConfig>(builder.Configuration.GetSection("BloodDonationQuantityConfig"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

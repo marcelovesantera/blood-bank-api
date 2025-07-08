@@ -5,6 +5,14 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodBankAPI", "BloodBankAPI\BloodBankAPI.csproj", "{A8BC61A9-C388-4378-BDB9-1383665F7430}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodBank.Application", "BloodBank.Application\BloodBank.Application.csproj", "{B2744CBC-B88E-46C6-9F82-C074C18048C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodBank.Domain", "BloodBank.Domain\BloodBank.Domain.csproj", "{5CCC63E0-9C2D-49BB-9657-1F52A46B227E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodBank.Infrastructure", "BloodBank.Infrastructure\BloodBank.Infrastructure.csproj", "{572E0D98-1E3F-48B7-98EA-A7B3D156BBC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodBank.Tests", "BloodBank.Tests\BloodBank.Tests.csproj", "{80CFB613-E980-4B75-A72D-8CE08BE9A99C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{A8BC61A9-C388-4378-BDB9-1383665F7430}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8BC61A9-C388-4378-BDB9-1383665F7430}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8BC61A9-C388-4378-BDB9-1383665F7430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2744CBC-B88E-46C6-9F82-C074C18048C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2744CBC-B88E-46C6-9F82-C074C18048C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2744CBC-B88E-46C6-9F82-C074C18048C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2744CBC-B88E-46C6-9F82-C074C18048C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CCC63E0-9C2D-49BB-9657-1F52A46B227E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCC63E0-9C2D-49BB-9657-1F52A46B227E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCC63E0-9C2D-49BB-9657-1F52A46B227E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCC63E0-9C2D-49BB-9657-1F52A46B227E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572E0D98-1E3F-48B7-98EA-A7B3D156BBC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572E0D98-1E3F-48B7-98EA-A7B3D156BBC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572E0D98-1E3F-48B7-98EA-A7B3D156BBC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572E0D98-1E3F-48B7-98EA-A7B3D156BBC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80CFB613-E980-4B75-A72D-8CE08BE9A99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80CFB613-E980-4B75-A72D-8CE08BE9A99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80CFB613-E980-4B75-A72D-8CE08BE9A99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80CFB613-E980-4B75-A72D-8CE08BE9A99C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

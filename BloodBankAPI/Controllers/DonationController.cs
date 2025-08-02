@@ -27,7 +27,7 @@ namespace BloodBankAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id)
+        public IActionResult Put(int id, UpdateDonationInputModel donation)
         {
             return NoContent();
         }

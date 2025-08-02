@@ -4,6 +4,7 @@
     {
         protected BaseEntity()
         {
+            Id = new Guid();
             CreatedAt = DateTime.Now;
             IsDeleted = false;
         }

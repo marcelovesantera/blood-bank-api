@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BloodBankAPI.InputModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBankAPI.Controllers
 {
@@ -7,9 +8,9 @@ namespace BloodBankAPI.Controllers
     public class DonorController : ControllerBase
     {
         [HttpPost]
-        public IActionResult Post()
+        public IActionResult Post(CreateDonorInputModel donor)
         {
-            return NoContent();
+            return CreatedAtAction(nameof(Get), new { Id = 1 }, donor);
         }
 
         [HttpGet]
@@ -25,7 +26,7 @@ namespace BloodBankAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id)
+        public IActionResult Put(int id, UpdateDonorInputModel donor)
         {
             return NoContent();
         }

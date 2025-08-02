@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BloodBank.Domain.Entities;
+using BloodBankAPI.InputModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBankAPI.Controllers
 {
@@ -7,9 +9,9 @@ namespace BloodBankAPI.Controllers
     public class AddressController : ControllerBase
     {
         [HttpPost]
-        public IActionResult Post()
+        public IActionResult Post(CreateAddressInputModel address)
         {
-            return NoContent();
+            return CreatedAtAction(nameof(Get), new { Id = 1 }, address);
         }
 
         [HttpGet]

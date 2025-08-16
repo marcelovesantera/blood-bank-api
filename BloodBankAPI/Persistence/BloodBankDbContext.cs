@@ -19,6 +19,9 @@ namespace BloodBankAPI.Persistence
             mb.Entity<Donor>(e =>
             {
                 e.HasKey(d => d.Id);
+                e.Property(d => d.Id)
+                    .ValueGeneratedOnAdd()
+                    .HasDefaultValueSql("NEWSEQUENTIALID()");
                 
                 e.HasOne(d => d.Address)
                     .WithOne(a => a.Donor)
@@ -34,11 +37,17 @@ namespace BloodBankAPI.Persistence
             mb.Entity<Address>(e =>
             {
                 e.HasKey(a => a.Id);
+                e.Property(a => a.Id)
+                    .ValueGeneratedOnAdd()
+                    .HasDefaultValueSql("NEWSEQUENTIALID()");
             });
 
             mb.Entity<Donation>(e =>
             {
                 e.HasKey(d => d.Id);
+                e.Property(d => d.Id)
+                    .ValueGeneratedOnAdd()
+                    .HasDefaultValueSql("NEWSEQUENTIALID()");
             });
 
             base.OnModelCreating(mb);

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BloodBankAPI.Persistence;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBankAPI.Controllers
 {
@@ -6,6 +7,13 @@ namespace BloodBankAPI.Controllers
     [ApiController]
     public class BloodStockController : ControllerBase
     {
+        private readonly BloodBankDbContext _dbContext;
+
+        public BloodStockController(BloodBankDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         [HttpPost]
         public IActionResult Post()
         {

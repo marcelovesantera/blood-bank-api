@@ -1,5 +1,5 @@
-﻿using BloodBank.Domain.Entities;
-using BloodBankAPI.InputModels;
+﻿using BloodBankAPI.InputModels;
+using BloodBankAPI.Persistence;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBankAPI.Controllers
@@ -8,6 +8,13 @@ namespace BloodBankAPI.Controllers
     [ApiController]
     public class AddressController : ControllerBase
     {
+        private readonly BloodBankDbContext _dbContext;
+
+        public AddressController(BloodBankDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         [HttpPost]
         public IActionResult Post(CreateAddressInputModel address)
         {

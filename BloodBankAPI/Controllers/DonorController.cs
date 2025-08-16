@@ -1,4 +1,5 @@
 ﻿using BloodBankAPI.InputModels;
+using BloodBankAPI.Persistence;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BloodBankAPI.Controllers
@@ -7,6 +8,13 @@ namespace BloodBankAPI.Controllers
     [ApiController]
     public class DonorController : ControllerBase
     {
+        private readonly BloodBankDbContext _dbContext;
+
+        public DonorController(BloodBankDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         [HttpPost]
         public IActionResult Post(CreateDonorInputModel donor)
         {

@@ -1,6 +1,10 @@
+using BloodBankAPI.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<BloodBankDbContext>(options => options.UseInMemoryDatabase("BloodBankDbInMemory"));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
